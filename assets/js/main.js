@@ -9,40 +9,45 @@ function displayAnimalInfo () {
 
   var animal = $(this).attr("animal-name");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-animal + "&api_key=dc6zaTOxFJmzC&limit=1";
+animal + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 // Creating an AJAX call for the specific animal button being clicked
 $.ajax({
   url: queryURL,
   method: "GET"
 }).then(function(response) {
+
+  $("#gifs-appear-here").empty();
+
   // Creating a div to hold the animal
   var animalDiv = $("<div class='animal'>");
-  console.log(animalDiv);
+
+  //loops through the length of the results
+  for (i = 0; i < response.data.length; i ++){
 
   // Storing the rating data
-  var ratings = response.data.rating;
+  var ratings = response.data[i].rating;
 
   // Creating an element to have the rating displayed
   var ratingElement = $("<p>").text("Rating: " + ratings);
-  // Displaying the rating
-  animalDiv.append(ratingElement);
 
   // Retrieving the URL for the image
-  var imgURL = response.data[0].images.fixed_height.url;    
+  var imgURL = response.data[i].images.fixed_height.url;    
 
   // Creating an element to hold the image
   var image = $("<img>").attr("src", imgURL);
 
   // Appending the image
+  animalDiv.append(ratingElement);
   animalDiv.append(image);
 
-  
+  $("#gifs-appear-here").prepend(animalDiv);
+
+  }
 
 });
 
 }
-
 
 function renderButtons() {
 
