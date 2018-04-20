@@ -13,17 +13,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
 <body>
-
         <div class="jumbotron">
-                <h1 class="display-4">Tool Time</h1>
+                <h1 class="display-4">Tool Time Gif</h1>
                 <!-- <hr class="my-4"> -->
                 <p class = belowTitle>Add a tool or something related to DIY.</p>
         </div>
         <div id = "borderBottom">
-            <img src = "assets/imgs/wrench.png" width="80px" class = "toolImage">
-            <img src = "assets/imgs/pliers.png" width="80px" class = "toolImage">
-            <img src = "assets/imgs/wrench.png" width="80px" class = "toolImage">
-            <img src = "assets/imgs/pliers.png" width="80px" class = "toolImage">
+            <img src = "assets/imgs/wrench.png" class = "toolImage">
+            <img src = "assets/imgs/pliers.png" class = "toolImage">
+            <img src = "assets/imgs/stapleGun.png" class = "toolImage">
+            <img src = "assets/imgs/drill.png" class = "toolImage drill">
             <!-- <img src = "assets/imgs/wrench.png" width="80px" class = "toolImage">
             <img src = "assets/imgs/pliers.png" width="80px" class = "toolImage"> -->
         </div>
@@ -31,34 +30,37 @@
         <div class = container>
             <div class = "row">
                     <div class = "col-md-12">
-            <p><strong>Add a tool tool. Click on the image to see the gif (play image).</strong>
-            </p>
+                    <p id = "instructions">Add a tool to the buttons with the form, then click the button to display 10 images. Click on the image to see the gif (play image).
+                    </p>
+                    </div>
+            </div>
         </div>
-    </div>
-    </div>
 
     <div class = "container">
         <div class = "row">
             <div class = "col-md-12">
-    <!-- Where the buttons will go -->
-    <div id = "toolButtons" class = "toolButtons"></div>
-
-    <!-- Add an tool form -->
-    <form id = "tool-form">
-        <label for = "tool-input">Add a tool:</label>
-        <input type = "text" id = "tool-input">
-
-        <input id = "addTool" type = "submit" value="Add Tool" class="btn btn-primary">
-    </form>
-
-    <div id = "tools-appear-here"></div>
+                <!-- Where the buttons will go -->
+                <div id = "toolButtons" class = "toolButtons">
+                </div>
+                <!-- Add an tool form -->
+                <form id = "tool-form">
+                    <label for = "tool-input">Add a tool:</label>
+                    <input type = "text" id = "tool-input">
+                    <input id = "addTool" type = "submit" value="Add Tool" class="btn btn-primary">
+                </form>
+                <div id = "tools-appear-here">
+                </div>
+                <!-- This is where the gifs will apear -->
+                <div id = "gifs-appear-here">
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-
-    <!-- This is where the gifs will apear -->
-    <div id = "gifs-appear-here"></div>
     
-</div>
+    <div id = "footer">
+        Coded with HTML/CSS/Bootstrap/JS/JQuery/Giphy API by Randy Gentry
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
