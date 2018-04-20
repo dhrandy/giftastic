@@ -77,14 +77,34 @@ p {
     margin-top: 40px;
     width: 100%;
     font-size: 14px;
+    position: unset;
     bottom: 0;
 }
 
-/* @media only screen and (max-width: 1024px) {
+/* Kindle Fire HD10 */
+@media only screen and (height: 1920px),(width: 1200px) {
 #footer {
     position:absolute;
     bottom:0;
-} */
+}
+}
+
+/* iPad*/
+@media only screen and (height: 1024px),(width: 768px) {
+    #footer {
+        position:absolute;
+        bottom:0;
+    }
+    }
+
+
+/* iPad Pro */
+@media only screen and (height: 1366px),(width: 1024px) {
+    #footer {
+        position:absolute;
+        bottom:0;
+    }
+    }
 
 @media only screen and (max-width: 600px) {
     .display-4 {
