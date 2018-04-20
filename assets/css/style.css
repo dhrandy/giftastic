@@ -12,6 +12,7 @@
     text-align: center;
     color: white;
     height: 400px;
+    margin-bottom: 0px;
 }
 
 .belowTitle {
@@ -25,9 +26,21 @@
     font-size: 105px;
 }
 
+#borderBottom {
+    height: 60px;
+    background-color: yellow;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .container {
     background-color: white;
     padding: 10px;
+    padding-bottom: 20px;
+}
+
+.col-md-12 {
+    padding-bottom: 20px;
 }
 
 .btn {
@@ -36,4 +49,14 @@
 
 #addTool{
     clear: both;
+}
+
+.toolImageDiv {
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.toolImage {
+    padding: 10px;
 }

@@ -1,16 +1,17 @@
 // A $( document ).ready() block.
 $(function() {
 
-// Initial arra of animals
+// Initial arra of toolss
 var tools = ["hammer", "nail", "screwdriver"];
 
+//this function creates the buttons
 function renderButtons() {
 
-  // Deleting the animals prior to adding new animals
+  // Deleting the tools prior to adding new tools
   // (this is necessary otherwise you will have repeat buttons)
   $("#tools-appear-here").empty();
 
-  // Looping through the array of animals
+  // Looping through the array of tools
   for (var i = 0; i < tools.length; i++) {
 
     // Then dynamicaly generating buttons for each tool in the array
@@ -63,11 +64,11 @@ $.ajax({
   for (i = 0; i < responseData.length; i ++){
 
   // Storing the rating data
-  
   var ratings = responseData[i].rating;
 
+  // Only display clean ratings
+  if (ratings !== "g" || "pg" || "pg-13" || "y"){
   // Creating an element to have the rating displayed
-   if (ratings[i].rating !== "g" || "pg" || "pg-13" || "y"){
   var ratingElement = $("<p>").text("Rating: " + ratings);
    }
   // Retrieving the URL for the still image
@@ -84,9 +85,14 @@ $.ajax({
   .attr("data-state", "still")
   .attr("class", giphClass);
 
+  // creates a div for each image so I can float left 
+  var imageDiv = $("<div class='toolImageDiv'>");
+
   // Appending the image
-  toolDiv.append(ratingElement);
-  toolDiv.append(image);
+  imageDiv.append(ratingElement);
+  imageDiv.append(image);
+
+  toolDiv.append(imageDiv);
   
   $("#gifs-appear-here").prepend(toolDiv);
 
