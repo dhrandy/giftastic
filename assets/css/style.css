@@ -1,8 +1,39 @@
-.item {
-    
-    width: 300px;
-    margin: 25px;
-    padding: 15px;
-    float: left;
+/* body {
+    background-image: url("../imgs/bg1.jpg");
+    background-position: center center;
+    background-size: cover;
+} */
+
+.jumbotron {
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("../imgs/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 400px;
 }
 
+.belowTitle {
+    font-size: 20px;
+}
+
+.my-4 {
+    color: white;
+}
+.display-4 {
+    font-size: 105px;
+}
+
+.container {
+    background-color: white;
+    padding: 10px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#addTool{
+    clear: both;
+}
