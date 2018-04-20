@@ -36,11 +36,6 @@
 .container {
     background-color: white;
     padding: 10px;
-    padding-bottom: 20px;
-}
-
-.col-md-12 {
-    padding-bottom: 20px;
 }
 
 .btn {
@@ -59,4 +54,8 @@
 
 .toolImage {
     padding: 10px;
+}
+
+p {
+    margin: 0px;
 }
