@@ -122,8 +122,13 @@ p {
         padding: 17px;
         position: static;
     }
+
     .containerBottom {
         margin-bottom: 70px;
+    }
+
+    .gif {
+        max-width: 130px;
     }
 }
 
