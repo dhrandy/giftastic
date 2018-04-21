@@ -68,6 +68,10 @@ p {
     padding-bottom: 50px;
 }
 
+.containerBottom {
+    margin-bottom: 50px;
+}
+
 #footer {
     clear: both;
     height: 50px;
@@ -77,34 +81,34 @@ p {
     margin-top: 40px;
     width: 100%;
     font-size: 14px;
-    position: unset;
+    position:fixed;
     bottom: 0;
 }
 
 /* Kindle Fire HD10 */
-@media only screen and (height: 1920px),(width: 1200px) {
+/* @media only screen and (height: 1920px),(width: 1200px) {
 #footer {
     position:absolute;
     bottom:0;
 }
-}
+} */
 
 /* iPad*/
-@media only screen and (height: 1024px),(width: 768px) {
+/* @media only screen and (height: 1024px),(width: 768px) {
     #footer {
         position:absolute;
         bottom:0;
     }
-    }
+    } */
 
 
 /* iPad Pro */
-@media only screen and (height: 1366px),(width: 1024px) {
+/* @media only screen and (height: 1366px),(width: 1024px) {
     #footer {
         position:absolute;
         bottom:0;
     }
-    }
+    } */
 
 @media only screen and (max-width: 600px) {
     .display-4 {
@@ -116,6 +120,10 @@ p {
         height:70px;
         font-size: 12px;
         padding: 17px;
+        position: static;
+    }
+    .containerBottom {
+        margin-bottom: 70px;
     }
 }
 
