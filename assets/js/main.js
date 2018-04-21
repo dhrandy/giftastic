@@ -25,14 +25,13 @@ $(function() {
           a.text(tools[i]);
           // Adding the button to the buttons-view div
           $("#tools-appear-here").append(a);
-          console.log("toolArray = ", tools)
       }
   }
 
   $("#addTool").on("click", function(event) {
       event.preventDefault();
       // This line grabs the input from the textbox
-      var toolFromInput = $("#tool-input").val().trim();
+      var toolFromInput = $("#tool-input").val().trim().toLowerCase();
 
       // Adding tool from the textbox to our array
       tools.push(toolFromInput);
