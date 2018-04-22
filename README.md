@@ -15,10 +15,10 @@ The theme is Home Improvement to inspire you to enter a tool term, but feel free
 Go ahead! Click on the following link to preview the completed assignment.
 https://dhrandy.github.io/giftastic
 
-Built With
-HTML
-CSS
-Twitter-Bootstrap - Framework
-JavaScript
-jQuery - JavaScript Library
-giphy API
+Built With  
+HTML  
+CSS  
+Twitter-Bootstrap - Framework  
+JavaScript  
+jQuery - JavaScript Library  
+giphy API  
